@@ -52,3 +52,23 @@ The mod calls three read-only Raily tools. In `auto` permission mode Claude Code
 ```
 
 If you connected the server with `claude mcp add ... raily`, use `mcp__raily__…` instead of `mcp__claude_ai_Raily__…`.
+
+## Privacy and data
+
+- **What it reads.** Through your own Raily MCP connection it reads three things: your agent state (counters, balance, a waiting question), your match deliveries (display name, city, topic, score) and your contact requests. This is the same data you see in Raily.
+- **What it sends.** Nothing. It calls Raily tools with empty arguments and never sends the conversation, your files or anything from your machine anywhere. It makes no network requests of its own: every call goes through the Raily MCP server you connected.
+- **What it stores.** Only plugin state kept by Claude Code (the last counters and the ids of events already shown). The mod itself writes no files and sends this state nowhere.
+- **Privacy policy.** [railyai.com/privacy](https://railyai.com/privacy).
+
+## What the hooks do
+
+The mod calls the three read-only Raily tools above by itself, on a timer, without the model asking. It never opens, skips, answers or pays for anything.
+
+| Hook | What it does |
+| --- | --- |
+| `session.start` | Records what already exists, then starts the poll timer. |
+| `prompt.submit` | Marks the session as active so polling continues. It does not read or change your prompt. |
+| `ui.render` | Draws the strip above the prompt from that state. |
+| `turn.complete` | Marks the session as active and polls once more. It does not read the reply. |
+
+Polling stops after 10 minutes without activity.

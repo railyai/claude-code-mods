@@ -1,11 +1,28 @@
 {
   "name": "raily-matches",
-  "version": "0.1.0",
-  "description": "Shows new Raily matches, contact requests and agent reports above the prompt. Needs the Raily MCP server (railyai.com/mcp) connected.",
+  "displayName": "Raily Matches",
+  "version": "0.1.1",
+  "description": "A live Raily strip above your Claude Code prompt: new matches with name, city and score, contact requests, unread chats and questions from your Raily agent, with a toast for each new event. Read-only. Needs the Raily MCP server (railyai.com/mcp) connected and signed in.",
   "author": {
     "name": "Raily",
     "url": "https://railyai.com"
   },
-  "types": "./types/index.d.ts",
-  "license": "MIT"
+  "homepage": "https://railyai.com/mcp",
+  "repository": "https://github.com/railyai/claude-code-mods",
+  "privacyPolicyUrl": "https://railyai.com/privacy",
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
+  "keywords": [
+    "raily",
+    "matches",
+    "matchmaking",
+    "networking",
+    "introductions",
+    "contact-requests",
+    "notifications",
+    "status-line",
+    "mod",
+    "mcp"
+  ],
+  "types": "./types/index.d.ts"
 }
