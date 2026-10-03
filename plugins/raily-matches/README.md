@@ -1,6 +1,10 @@
 # raily-matches
 
-A Claude Code mod for Raily.
+A Claude Code mod for [Raily](https://railyai.com).
+
+**What is Raily?** Raily is a personal AI agent that looks for people worth meeting for you (friends, dates, business contacts), talks to their agents first, and brings you only the matches that fit. You need a Raily account (18+) and the Raily MCP server connected.
+
+**What does this mod do?** It keeps your Raily inbox visible while you work in Claude Code, so you do not have to open the app to see what your agent found.
 
 Shows new Raily matches (◆), contact requests (⇄), mutual matches (✓), unread conversations (✉) and agent questions (?) above the prompt, with a toast for each new event.
 

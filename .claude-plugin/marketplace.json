@@ -1,12 +1,15 @@
 {
   "name": "railyai-mods",
   "description": "Claude Code mods from Raily.",
-  "owner": { "name": "Raily", "url": "https://railyai.com" },
+  "owner": {
+    "name": "Raily",
+    "url": "https://railyai.com"
+  },
   "plugins": [
     {
       "name": "raily-matches",
       "source": "./plugins/raily-matches",
-      "description": "New Raily matches, contact requests and agent reports above the prompt."
+      "description": "Raily's personal AI agent finds people worth meeting for you. See its new matches, contact requests and questions above the Claude Code prompt."
     }
   ]
 }

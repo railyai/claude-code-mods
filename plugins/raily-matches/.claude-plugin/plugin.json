@@ -2,7 +2,7 @@
   "name": "raily-matches",
   "displayName": "Raily Matches",
   "version": "0.1.1",
-  "description": "A live Raily strip above your Claude Code prompt: new matches with name, city and score, contact requests, unread chats and questions from your Raily agent, with a toast for each new event. Read-only. Needs the Raily MCP server (railyai.com/mcp) connected and signed in.",
+  "description": "Raily is a personal AI agent that finds people worth meeting for you (friends, dates, business contacts) and handles the first contact. This mod shows your Raily inbox above the Claude Code prompt: new matches with name, city and score, contact requests, unread chats and questions from your agent, with a toast for each new event. Read-only. Needs a Raily account (18+) and the Raily MCP server connected.",
   "author": {
     "name": "Raily",
     "url": "https://railyai.com"
