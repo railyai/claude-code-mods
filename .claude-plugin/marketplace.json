@@ -1,0 +1,12 @@
+{
+  "name": "railyai-mods",
+  "description": "Claude Code mods from Raily.",
+  "owner": { "name": "Raily", "url": "https://railyai.com" },
+  "plugins": [
+    {
+      "name": "raily-matches",
+      "source": "./plugins/raily-matches",
+      "description": "New Raily matches, contact requests and agent reports above the prompt."
+    }
+  ]
+}

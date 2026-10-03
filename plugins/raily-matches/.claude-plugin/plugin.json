@@ -1,0 +1,7 @@
+{
+  "name": "raily-matches",
+  "version": "0.1.0",
+  "description": "Shows new Raily matches, contact requests and agent reports above the prompt. Needs the Raily MCP server (railyai.com/mcp) connected.",
+  "author": { "name": "Raily", "url": "https://railyai.com" },
+  "types": "./types/index.d.ts"
+}
